@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Pitogo Appointment Website</title>
+</head>
+
+<body>
+    <script defer src = "form.js"></script>
+    <header>
+        <img src="images/Pitogo_Logo.png" alt="Logo of Pitogo" />
+    </header>
+    <main>
+        <form action="form.PHP" method="POST">
+
+            <!-- <div class="form-fields">
+                <label for="date">
+                    <p>Date<span> (Petsa)</span></p>
+                    <input type="text" name="date" id="date"><br>
+                </label>
+            </div> -->
+
+            <div class="form-fields">
+                <legend>Personal Information <span>(Personal na Impormasyon)</span></legend>
+                <hr>
+                <label for="fullname">
+                    <p>Full Name: <span>(Buong Pangalan)</span></p>
+                </label>
+                <input type="text" name="fullname" id="fullname" placeholder="Jose P. Rizal Jr.">
+
+                <label for="address">
+                    <p>Address:</p>
+                </label>
+                <input type="address" name="address" id="address" placeholder="123 Cebu St. Barangay Pitogo, Taguig City">
+
+                <label for="email">
+                    <p>E-mail <span>(if applicable)</span></p>
+                </label>
+                <input type="email" name="email" id="email" placeholder="jose10rizal@example.com">
+
+                <label for="contactnumber">
+                    <p>Contact No.</p>
+                </label>
+                <input type="text" name="contactnumber" id="contactnumber" placeholder="09123456789">
+
+            </div>
+
+            <div class="form-fields">
+                <p>Purpose <span>(Dahilan)</span></p>
+                <hr>
+                <label for="department">
+                    <p>Departament <span>(Departamento)</span></p>
+                </label>
+                <select id = "department">
+                    <option value="">
+                        <p>Department1</p>
+                    </option>
+                    <hr>
+                    <option value="">
+                        <p>Department2</p>
+                    </option>
+                    <hr>
+                    <option value="">
+                        <p>Department3</p>
+                    </option>
+                </select>
+
+                <label for="papertype">
+                    <p>What do you need?<span>(Departamento)</span></p>
+                </label>
+                <select id = "papertype">
+                    <option value="cedula">
+                        Cedula
+                    </option>
+                    <hr>
+                    <option value="barangay-clearance">
+                         Clearance/Certificate
+                    </option>
+                    <hr>
+                    <option value="barangay-business-clearance">
+                        Barangay Business Clearance
+                    </option>
+                    <hr>
+                    <option value="barangay-id">
+                        Barangay Id
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-fields-add" id = "form-fields-add">
+
+            </div>
+
+            <div class="form-fields">
+                <div class="authorization">
+                    <input type="checkbox" id="authroize" name="authorize">
+                    <label for="authorize" class="authorize">
+                        <p>hereby authorize City
+                            Government of Taguig, to collect and process the data indicated herein for
+                            the purpose of effecting control COVID-19 infection. I understand that my personal
+                            information is
+                            protected by RA 10173, Data Privacy Act of 2012, and that I am required by RA 11469,
+                            Bayanihan Heal
+                            as One Act, to provide truthful information.<br><span>
+                                (Pinahihintulutan ko ang Pamahalaang Lungsod ng Taguig, upang mangolekta at iproseso ang
+                                datos
+                                na ipinahiwatig dito para sa layunin ng pag-epekto ng impeksyong COVID-19. Naiintindihan
+                                ko na
+                                ang aking personal na impormasyon ay protektado ng RA 10173, Data Privacy Act of 2012,
+                                at
+                                hiniling ako ng RA 11469, ang Bayanihan Heal bilang Isang Batas, upang magbigay ng
+                                makatotohanang impormasyon.)
+                            </span></p>
+                    </label>
+                </div>
+            </div>
+
+
+            
+                <div class="buttons">
+                <input type="reset">
+                <input type="submit">
+
+            </div>
+        </form>
+          <a href="index.html"> <- Back to Main Page</a>
+        </div>
+    </main>
+
+</body>
+
+</html>

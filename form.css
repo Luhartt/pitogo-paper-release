@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    padding: 3vh 6vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(13,76,134,1) 43%);
+    border-bottom: 3px solid white;
+}
+header img{
+    height: 5rem;
+}
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-fields, .form-fields-add{
+    margin-block: 1.5rem;
+    padding:1rem 1.5rem;
+    width: 40vw;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    border-radius: 5px;
+
+}
+
+hr{
+    margin-block:0.3rem 0.7rem ;
+}
+
+label{
+
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+span{
+    /* font-weight: 100; */
+    opacity: .35;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+input{
+    border: 1px solid rgba(0,0,0, 0.4);
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-clip: padding-box;
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+
+}
+.form-fields>p, legend , .form-fields-add>p{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+input::placeholder{
+    opacity: 0.55;
+}
+
+select{
+    border: 1px solid rgba(0,0,0, 0.4);
+    width: 100%;
+    padding: 0.5rem 0.3rem;
+    background-clip: padding-box;
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+
+option{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-block: 3rem;
+}
+
+
+label.authorize>p, label.authorize span{
+    font-size: 13px;
+}
+
+
+
+
+
+input[type = checkbox]{
+    transform: scale(1.5);
+    margin-top: 1.5%;
+}
+
+.authorization{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+.buttons{
+
+    display: flex;
+    gap: 3%;
+    width: 40%;
+
+}
+
+input[type = submit], input[type = reset]{
+
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #d9dde0;
+    border: 3px solid transparent;
+    
+}
+
+input[type = submit]:hover, input[type = reset]:hover{
+
+    
+    border: p3x solid #054A88;
+   
+
+}
+
+
+
+textarea{
+
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 15rem;
+    padding: 0.5rem;
+}
+
+a{
+
+    margin:3% 0;
+    text-decoration: none;
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+a:hover{
+    color: #054A88;
+}
+@media (max-width: 1000px){
+
+    
+    header img {
+
+        height: 3rem;
+    }
+
+
+    .form-fields,  .form-fields-add{
+        width:70svw;
+       }
+    
+    label{
+
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+    
+    span{
+        /* font-weight: 100; */
+        opacity: .65;
+        font-weight: 500;
+        font-size: 12px;
+    
+    }
+    
+    label.authorize>p, label.authorize span , .form-fields-add>p{
+        font-size: 12px;
+    }
+
+    input[type = checkbox]{
+        transform: scale(1.2);
+        margin: 1.5% 2% 0 0;
+    }
+
+    .buttons{
+    
+        gap: 3%;
+        margin: 0;
+        
+        }
+
+    }
+
+
